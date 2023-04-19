@@ -19,5 +19,5 @@
 
 # 분류
 
-- [Spring](./Spring/Spring)
+- [Spring](./Spring/Spring.md)
 
