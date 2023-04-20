@@ -12,7 +12,7 @@ spring은 java기반의 프레임워크이며 프레임워크란 뼈대나 근�
 
 # spring 의 특징
 
-1. POJO 기반의 구성
+### 1. POJO 기반의 구성
 
 <br>
 
@@ -22,7 +22,7 @@ spring은 java기반의 프레임워크이며 프레임워크란 뼈대나 근�
 
 <br>
 
-2. 의존성 주입을 통한 객체 간의 관계 구성
+### 2. 의존성 주입을 통한 객체 간의 관계 구성
 
 <br>
 
@@ -53,8 +53,7 @@ XML설정, 어노테이션설정 등과 같은 방법으로 의존성 주입을 
 
 <br>
 
-
-3. AOP 지원
+### 3. AOP 지원
 
 <br>
 
@@ -73,7 +72,7 @@ XML설정, 어노테이션설정 등과 같은 방법으로 의존성 주입을 
 <br>
 
 
-4. 편리한 MVC 구조
+### 4. 편리한 MVC 구조
 
 <br>
 
@@ -95,7 +94,7 @@ MVC패턴은 모델, 뷰, 컨트롤러로 나눌 수 있다.
 
 <br>
 
-5. WAS의 종속적이지 않은 개발환경
+### 5. WAS의 종속적이지 않은 개발환경
 
 <br>
 
@@ -112,4 +111,4 @@ MVC패턴은 모델, 뷰, 컨트롤러로 나눌 수 있다.
 <br>
 
 [도서] [코드로 배우는 스프링 웹 프로젝트](https://search.shopping.naver.com/book/catalog/32441631109?cat_id=50010881&frm=PBOKPRO&query=%EC%BD%94%EB%93%9C%EB%A1%9C+%EB%B0%B0%EC%9A%B0%EB%8A%94+%EC%8A%A4%ED%94%84%EB%A7%81+%EC%9B%B9+%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8&NaPm=ct%3Dlgnn6to8%7Cci%3Df9134f50819e8c3c97cb52dc425aaaf51caf1073%7Ctr%3Dboknx%7Csn%3D95694%7Chk%3Dd54e09e541f31b10aad480fb36258c559ce2e5b0)<br>
-[블로그] [코드스테이츠 블로그](https://www.codestates.com/blog/content/%EC%8A%A4%ED%94%84%EB%A7%81-%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8)
+[블로그] [https://www.codestates.com/blog/content/%EC%8A%A4%ED%94%84%EB%A7%81-%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8](https://www.codestates.com/blog/content/%EC%8A%A4%ED%94%84%EB%A7%81-%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8)
