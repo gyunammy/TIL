@@ -88,4 +88,7 @@ create table[스키마.] 테이블명 (
 
 예약어란 오라클에서 구문이나 함수로 미리 사용하고 있는 단어로 예약어 목록은 V$RESERVED_WORDS 시스템 뷰에서 조회할 수 있다.
 
+<br>
 
+# 참조
+[도서] [오라클 SQL과 PL/SQL을 다루는 기술](https://search.shopping.naver.com/book/catalog/32466949488?cat_id=50010586&frm=PBOKPRO&query=%EC%98%A4%EB%9D%BC%ED%81%B4+SQL%EA%B3%BC+PL%2FSQL%EC%9D%84+%EB%8B%A4%EB%A3%A8%EB%8A%94+%EA%B8%B0%EC%88%A0&NaPm=ct%3Dlgt19ff4%7Cci%3D5fc3a30e9cdaedf414cf5f2bd774974597e04077%7Ctr%3Dboknx%7Csn%3D95694%7Chk%3Dc0d983479bb149afc86fd1e8637798ddaac939f6)
