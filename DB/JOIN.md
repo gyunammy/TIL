@@ -1,4 +1,8 @@
-# INNER JOIN
+# JOIN
+
+## INNER JOIN
+
+<br>
 
 ### 1. 동등조인 (EQUI-JOIN)
 
@@ -159,6 +163,90 @@ WHERE a.employee_id < b.employee_id
 employees 테이블을 a와 b로 나누어 조인을 하게 되는데 해당 쿼리는 같은 부서번호를 가진 사원 중 A사원번호가 B사원번호보다 작은 건을 조회하는 쿼리이다.
 
 employees 테이블에 부서번호가 20 인 건은 2건뿐이며 조건에 의해 결과는 한건만 추출된다.
+
+<br>
+
+ - - -
+
+<br>
+
+## OUTER JOIN
+
+<br>
+
+외부조인은 일반 조인을 확장한 개념으로, 조인조건에 만족하는 데이터 뿐만 아니라 한쪽 테이블에 조인 조건에 명시된 컬럼에 값이 없거나 해당 레코드가 없어도 데이터를 추출한다.
+
+<br>
+
+
+### 1. 일반 조인
+
+<br>
+
+입력
+```
+SELECT a.department_id, a.department_name, b.job_id, b.department_id
+FORM departments a, job_history b
+WHERE a.department_id = b.department_id;
+```
+
+결과
+|dapertment_id|department_name|job_id|department_id|
+|-------------|--------------|-------|-------------|
+|20|마케팅|MK_REP|20|
+|50|배송부|ST_CLERK|50|
+|50|배송부|ST_CLERK|50|
+|60|IT|IT_PROG|60|
+...
+
+예시에서는 department_id 컬럼을 조인조건으로 두었기 때문에 
+department 테이블에 부서정보가 존재한다 하더라도 job_history 테이블에 없다면 조회되지 않는다.
+
+이때 job_history에 없더라도 department 테이블의 모든 데이터를 출력하게 하기 위해서는 외부조인을 사용한다.
+
+<br>
+
+### 2. 외부조인
+
+<br>
+
+입력
+```
+SELECT a.department_id, a.department_name, b.job_id, b.department_id
+FORM departments a, job_history b
+WHERE a.department_id = b.department_id(+);
+```
+결과
+|dapertment_id|department_name|job_id|department_id|
+|-------------|--------------|-------|-------------|
+|10|총무기획부| | |
+|20|마케팅|MK_REP|20|
+|30|구매/생산부| | |
+|40|인사부| | |
+|50|배송부|ST_CLERK|50|
+...
+
+<br>
+
+조인 조건에서 데이터가 없는 테이블의 컬럼에 (+)기호를 붙여 데이터가 없더라도 조회되도록 했으며, 데이터가 없는경우 컬럼값은
+NULL로 출력된다.
+
+<br>
+
+#### 외부조인 정리
+
+1. 조인 대상 테이블 중 데이터가 없는 테이블 조인 조건에 (+)를 붙인다.
+2. 외부조인이 여러개일 때에는 해당테이블의 모든 조건에 (+)를 붙인다.
+3. 한번에 한 테이블에만 외부 조인을 할 수 있다.
+4. (+) 연산자가 붙은 조건과 OR을 같이 사용할 수 없다.
+
+<br>
+
+- - -
+
+## 카타시안 조인
+
+카타시안 조인은 쿼리의 FROM 절에 두 테이블을 명시했지만 두 테이블간 조인 조건이 없는 조인을 말한다. 이와같은 경우에는 결과값은 두 테이블의 레코드 수의 곱이다. 즉 A 테이블에 10개의 레코드가 있고, B 테이블에 3개의 레코드가 있다면 결과값은 30개의 레코드가 조회된다.
 
 <br>
 
