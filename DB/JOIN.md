@@ -250,5 +250,128 @@ NULL로 출력된다.
 
 <br>
 
+
+- - -
+
+
+
+## ANSI 조인
+
+<br>
+
+ANSI 조인은 ANSI SQL 문법을 사용한 조인을 말하며 앞서 다루었던 모든 조인을 ANSI JOIN으로 표현하여 사용할 수 있다.
+
+기존문법과 ANSI 조인의 차이점은 조인 조건의 위치에 있는데, 조인 조건이 WHERE 절에 위치한 기존 문법과 달리 ANSI 조인은 조인 조건이 FROM 절에 위치한다.
+
+<br>
+
+### ANSI 내부조인
+
+<br>
+
+기존문법
+```
+SELECT A.컬럼1, A.컬럼2, B.컬럼1, B.컬럼2
+FROM 테이블 A, 테이블 B
+WHERE A.컬럼1 = B.컬럼1
+```
+
+ANSI 문법
+```
+SELECT A.컬럼1, A.컬럼2, B.컬럼1, B.컬럼2
+FROM 테이블 A INNER JOIN 테이블 B
+    ON( A.컬럼1 = B.컬럼1 )
+WHERE ...
+```
+
+<br>
+
+### ANSI 내부조인
+
+<br>
+
+기존문법
+```
+SELECT A.컬럼1, A.컬럼2, B.컬럼1, B.컬럼2
+FROM 테이블 A, 테이블 B
+WHERE A.컬럼1 = B.컬럼1 (+)
+```
+
+ANSI 문법
+```
+SELECT A.컬럼1, A.컬럼2, B.컬럼1, B.컬럼2
+FROM 테이블 A LEFT JOIN 테이블 B
+    ON( A.컬럼1 = B.컬럼1 )
+WHERE ...
+```
+
+<br>
+
+기존 문법에서는 기준 테이블과 대상 테이블에서 대상 테이블쪽 조인 조건에 (+)를 붙였지만 ANSI 문법에서는 FROM 절에 명시된 테이블 순서에 입각해 먼저 명시된 테이블 기준으로 LEFT 또는 RIGHT를 붙인다.
+
+### CROSS 조인
+
+기본 문법에서 조인조건을 작성하지 않는 카타시안 조인같은 경우 ANSI 문법에서는 CROSS 조인이라고 부른다.
+
+<br>
+
+기본문법
+```
+SELECT a.employee_id, a.emp_name, b.department_id, b.department_name
+FROM employees a, departments b;
+```
+
+ANSI 문법
+```
+SELECT a.employee_id, a.emp_name, b.department_id, b.department_name
+FROM employees a CROSS JOIN departments b;
+```
+<br>
+
+### FULL OUTER 조인
+
+<br>
+
+FULL OUTER 조인 같은 경우에는 ANSI 조인에서만 제공하는 기술로써 기본 문법을 사용해서는 구현할 수 없다.
+
+다음 두 테이블안에 있는 데이터는 다음과 같다.
+
+|TABLE_A|
+|-------|
+|10|
+|20|
+|40|
+
+|TABLE_B|
+|-------|
+|10|
+|20|
+|30|
+
+40은 A에만 존재하고, 30은 B에만 존재할 때, 두 테이블을 조인하여 다음과 같은 결과를 조회한다.
+
+|EX_A|EX_B|
+|----|----|
+|10|10|
+|20|20|
+||30|
+|40||
+
+<br>
+
+기본 문법의 외부조인을 사용하여 (+) 를 붙여 표현할 수 있을 것 같지만 기본문법에서 (+)는 한 쪽에만 작성가능하기 때문에 A 테이블과 B 테이블모두 (+)를 붙이게 되면 SQL 오류가 발생하게 된다.
+
+<br>
+
+이때 FULL OUTER JOIN 를 사용하면 문제없이 출력할 수 있다.
+
+```
+SELECT a.EX_A, b.EX_B
+FROM  TABLE_A a FULL OUTER JOIN TABLE_B b
+    ON ( a.emp_id = b.emp_id );
+```
+
+<br>
+
 # 참조
 [도서] [오라클 SQL과 PL/SQL을 다루는 기술](https://search.shopping.naver.com/book/catalog/32466949488?cat_id=50010586&frm=PBOKPRO&query=%EC%98%A4%EB%9D%BC%ED%81%B4+SQL%EA%B3%BC+PL%2FSQL%EC%9D%84+%EB%8B%A4%EB%A3%A8%EB%8A%94+%EA%B8%B0%EC%88%A0&NaPm=ct%3Dlgt19ff4%7Cci%3D5fc3a30e9cdaedf414cf5f2bd774974597e04077%7Ctr%3Dboknx%7Csn%3D95694%7Chk%3Dc0d983479bb149afc86fd1e8637798ddaac939f6)
