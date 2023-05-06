@@ -46,6 +46,8 @@ REST API란 REST 기반으로 서비스 API를 구현한 것을 말하며 REST A
 3. 가독성을 높이기 위해 언더바 '_' 을 사용하지 않고 하이픈 '-'를 사용한다.
 4. URL는 대문자입력을 지양한다.
 
+<br>
+
 # 참조
 [유튜브] [https://www.youtube.com/watch?v=iOueE9AXDQQ&t=302s](https://www.youtube.com/watch?v=iOueE9AXDQQ&t=302s)
 

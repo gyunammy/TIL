@@ -39,11 +39,15 @@ JSTL core에 있는 태그 종류와 기능은 다음과 같다.
 |<c:otherwise>|switch문의 default에 해당|
 |<c:forEach>|다른언어의 loop문 items 속성에 배열을 할당할 수 있음|
 
+<br>
 
 
 # EL
 
 EL은 표현언어(Expression Language)의 준말이다. EL은 자바 스크립트에서 확정된 Xpath에서 힌트를 얻어 만들어진언어로 값이 없는 변수, 즉 null 에 관대하고 데이터 형 변환을 자동으로 해주는 특징이 있다. 따라서 EL을 사용하면 값이 null이거나 형변환등에 신경을 쓸 필요없이 서버로 전송해서 사용할 수 있다.
+
+<br>
+
 
 ### EL 사용법
 
@@ -54,6 +58,9 @@ ${name}
 ```
 
 EL의 내장 객체의 종류는 다음과 같다.
+
+<br>
+
 
 |객체명|설명|
 |-----|----|
@@ -67,11 +74,23 @@ EL의 내장 객체의 종류는 다음과 같다.
 |${initParam}|JSP 초기 파라미터를 가져오기 위한 객체|
 |${pageContext}|pageContext 객체에 접근하기 위한 객체|
 
+<br>
+
+
 ### JSTL을 사용하는 이유
+
+<br>
+
 
 JSTL + EL의 조합을 사용함으로써 기존 스크립틀릿을 사용했을 때보다 훨씬 간결하고 가독성 좋은 HTML 코드를 작성할 수 있다. 1부터 10까지 출력하는 예제를 통해 두 방법의 코드를 비교해보자.
 
+<br>
+
+
 #### 1. 스크립틀릿을 사용한 방법
+
+<br>
+
 
 ```
 <html>
@@ -87,7 +106,13 @@ JSTL + EL의 조합을 사용함으로써 기존 스크립틀릿을 사용했을
 
 위와같이 스크립틀릿과 HTML 태그들을함깨 사용하는 것을 지양해야 하는 이유는 가독성 문제 때문이다. 여러 개발자가 공동으로 작업을 진행할 때에 위와같이 작성하게 되면 해당 코드를 이해하기 위해서는 java를 알아야 하기 때문에 협업하기에 불친절하다고 할 수 있다.
 
+<br>
+
+
 #### 2. JSTL + EL을 사용한 방법
+
+<br>
+
 
 ```
 <% @taglib uri="http://java.sun.com/jstl/core" prefix="c" %>
@@ -107,3 +132,13 @@ JSTL + EL의 조합을 사용함으로써 기존 스크립틀릿을 사용했을
 JSTL + EL로 사용하게 되면 java코드와 "<% %>" 기호 없이 오로지 태그로만 구성되어 있기 때문에 가독성이 좋아지고 협업하는 사람들이 이해하기 쉬워진다.
 
 서버에서 넘어온 parameter를 꺼내는 방법에서도 스크립틀릿을 사용했을 때보다 보다 간결하게 하용할 수 있다.
+
+<br>
+
+예를 들어 java 코드 int num = 100; 을 jstl을 사용하여 표현하게 되면 <c:set var="num" value="100">이 된다.
+
+
+# 참조
+[유튜브] [https://usefultoknow.tistory.com/entry/JSTLJSP-Standard-Tag-Library%EC%9D%B4%EB%9E%80](https://usefultoknow.tistory.com/entry/JSTLJSP-Standard-Tag-Library%EC%9D%B4%EB%9E%80)
+
+[블로그][https://daesuni.github.io/jstl/](https://daesuni.github.io/jstl/)
