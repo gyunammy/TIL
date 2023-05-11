@@ -88,6 +88,7 @@ Controller는 다양한 타입의 결과를 반환하는데 이는 ViewResolver�
 
 <br>
 
-[도서] [코드로 배우는 스프링 웹 프로젝트](https://search.shopping.naver.com/book/catalog/32441631109?cat_id=50010881&frm=PBOKPRO&query=%EC%BD%94%EB%93%9C%EB%A1%9C+%EB%B0%B0%EC%9A%B0%EB%8A%94+%EC%8A%A4%ED%94%84%EB%A7%81+%EC%9B%B9+%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8&NaPm=ct%3Dlgnn6to8%7Cci%3Df9134f50819e8c3c97cb52dc425aaaf51caf1073%7Ctr%3Dboknx%7Csn%3D95694%7Chk%3Dd54e09e541f31b10aad480fb36258c559ce2e5b0)<br>
+[도서] [코드로 배우는 스프링 웹 프로젝트](https://search.shopping.naver.com/book/catalog/32441631109?cat_id=50010881&frm=PBOKPRO&query=%EC%BD%94%EB%93%9C%EB%A1%9C+%EB%B0%B0%EC%9A%B0%EB%8A%94+%EC%8A%A4%ED%94%84%EB%A7%81+%EC%9B%B9+%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8&NaPm=ct%3Dlgnn6to8%7Cci%3Df9134f50819e8c3c97cb52dc425aaaf51caf1073%7Ctr%3Dboknx%7Csn%3D95694%7Chk%3Dd54e09e541f31b10aad480fb36258c559ce2e5b0)
+
 [블로그] [http://egloos.zum.com/springmvc/v/504151](http://egloos.zum.com/springmvc/v/504151)
 
