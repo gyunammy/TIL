@@ -59,7 +59,7 @@ DispatcherServlet 클래스는 XmlWebApplicationContext를 이용해서 servlet-
 
 <br>
 
-![ex_screenshot](../img/mvc.jpg)
+![ex_screenshot](./img/mvc.jpg)   
 -사진 출처 : http://egloos.zum.com/springmvc/v/504151
 
 <br>
