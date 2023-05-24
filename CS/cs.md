@@ -8,3 +8,4 @@
 * [ALU와 제어장치](./ALU%EC%99%80%20%EC%A0%9C%EC%96%B4%EC%9E%A5%EC%B9%98.md)
 * [레지스터](./%EB%A0%88%EC%A7%80%EC%8A%A4%ED%84%B0.md)
 * [명령어 사이클과 인터럽트](./%EB%AA%85%EB%A0%B9%EC%96%B4%20%EC%82%AC%EC%9D%B4%ED%81%B4%EA%B3%BC%20%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8.md)
+* [빠른 cpu를 위한 설계 기법](./%EB%B9%A0%EB%A5%B8%20cpu%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%EC%84%A4%EA%B3%84%20%EA%B8%B0%EB%B2%95.md)
