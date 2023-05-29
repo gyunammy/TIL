@@ -53,7 +53,7 @@ SRAM은 전원이 연결되있는 상황에서는 저장된 데이터가 사라�
 
 <br>
 
-SDRAM 은 DRAM에서 발전된 RAM을 말하며SDRAM은 클럭신호와 동기화된 DRAM이라고 할 수 있다.
+SDRAM 은 DRAM에서 발전된 RAM을 말하며 SDRAM은 클럭신호와 동기화된 DRAM이라고 할 수 있다.
 
 <br>
 
