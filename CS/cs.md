@@ -15,3 +15,4 @@
 * [메모리의 주소 공간](./%EB%A9%94%EB%AA%A8%EB%A6%AC%EC%9D%98%20%EC%A3%BC%EC%86%8C%EA%B3%B5%EA%B0%84.md)
 * [캐시메모리](./%EC%BA%90%EC%8B%9C%EB%A9%94%EB%AA%A8%EB%A6%AC.md)
 * [보조기억장치](./%EB%B3%B4%EC%A1%B0%EA%B8%B0%EC%96%B5%EC%9E%A5%EC%B9%98.md)
+* [RAID의 정의와 종류](./RAID%EC%9D%98%20%EC%A0%95%EC%9D%98%EC%99%80%20%EC%A2%85%EB%A5%98.md)
