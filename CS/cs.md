@@ -21,3 +21,4 @@
 * [운영체제](./%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C.md)
 * [프로세스](./%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4.md)
 * [스레드](./%EC%8A%A4%EB%A0%88%EB%93%9C.md) 
+* [cpu스케줄링](./cpu%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81.md)
